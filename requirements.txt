@@ -1,0 +1,4 @@
+pandas         # Excel okuma ve veri analizi için
+openpyxl       # Pandas'ın .xlsx dosyalarını okuması için gereklidir
+Jinja2         # Python verisini HTML'e gömmek için
+typer          # (Bonus) Komut satırı arayüzünü güzelleştirmek için
