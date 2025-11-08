@@ -193,6 +193,7 @@ tbody tr:hover {
                         <thead>
                             <tr>
                                 <th>Cihaz ID</th>
+                                <th>Cihaz Adi</th>
                                 <th>Cihaz Türü</th>
                                 <th>Marka/Model</th>
                                 <th>Arıza Açıklaması</th>
@@ -203,6 +204,7 @@ tbody tr:hover {
                             {% for ariza in acik_arizalar_listesi %}
                             <tr>
                                 <td>{{ ariza.CihazID }}</td>
+                                <td>{{ ariza.CihazAdi }}</td>
                                 <td>{{ ariza.CihazTuru }}</td>
                                 <td>{{ ariza.MarkaModel }}</td>
                                 <td>{{ ariza.Aciklama }}</td>
@@ -225,6 +227,7 @@ tbody tr:hover {
                         <thead>
                             <tr>
                                 <th>Cihaz ID</th>
+                                <th>Cihaz Adi</th>
                                 <th>Cihaz Türü</th>
                                 <th>Marka/Model</th>
                                 <th>Zimmetli Personel</th>
@@ -235,6 +238,7 @@ tbody tr:hover {
                             {% for envanter in tum_envanter_listesi %}
                             <tr>
                                 <td>{{ envanter.CihazID }}</td>
+                                <td>{{ envanter.CihazAdi }}</td>
                                 <td>{{ envanter.CihazTuru }}</td>
                                 <td>{{ envanter.MarkaModel }}</td>
                                 <td>{{ envanter.ZimmetliPersonel }}</td>

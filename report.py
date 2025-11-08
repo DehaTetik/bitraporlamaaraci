@@ -20,6 +20,8 @@ def process_data(df_envanter, df_ariza):
     # Temel istatistikler
     stats = {
         'toplam_cihaz': len(df_envanter),
+        'Cihaz_Adı': df_envanter['CihazAdi'].value_counts().to_dict(),
+        
         'cihaz_durum_dagilimi': df_envanter['Durum'].value_counts().to_dict(),
         'cihaz_tur_dagilimi': df_envanter['CihazTuru'].value_counts().to_dict(),
         'toplam_ariza': len(df_ariza),
